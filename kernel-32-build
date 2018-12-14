@@ -4,7 +4,7 @@ mkdir ../output-32
 make mrproper O=../output-32
 make clean O=../output-32
 export ARCH=arm
-export CROSS_COMPILE=../compiler/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-
+export CROSS_COMPILE=.../compiler/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-
 #ARCH=arm make O=../output-32 k62mv1_bsp_defconfig
 #ARCH=arm make O=../output-32 k62v1_32_bsp_defconfig
 #ARCH=arm make O=../output-32 k62v1_bsp_defconfig
