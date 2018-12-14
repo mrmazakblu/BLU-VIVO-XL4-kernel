@@ -9,5 +9,5 @@ export CROSS_COMPILE=../compiler/arm-linux-androideabi-4.9/bin/arm-linux-android
 #ARCH=arm make O=../output-32 k62v1_32_bsp_defconfig
 #ARCH=arm make O=../output-32 k62v1_bsp_defconfig
 ARCH=arm make O=../output-32 k65v1_bsp_defconfig
-ARCH=arm make -j2 O=../output-32
+ARCH=arm make -j2 O=../output-32 2>> ../error
 
