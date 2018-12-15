@@ -5,6 +5,7 @@ make mrproper O=../output-64
 make clean O=../output-64
 export ARCH=arm64
 export CROSS_COMPILE=.../aarch64-linux-android-4.9/bin/aarch64-linux-android-
-ARCH=arm64 make O=../output-64 k62v1_64_bsp_defconfig
-ARCH=arm64 make -j2 O=../output-64 2> ../error-64
+#ARCH=arm64 make O=../output-64 k62v1_64_bsp_defconfig
+ARCH=arm64 make O=../output-64 k65v1_64_bsp_defconfig
+ARCH=arm64 make -j2 O=../output-64 2> ../error-64-65
 
