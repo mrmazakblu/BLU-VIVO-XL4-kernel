@@ -1,0 +1,108 @@
+#!/bin/bash
+
+cd /home/v-user/android/Blu_vivo-xl4/VivoXL4-kernel-4.9
+export ARCH=arm64
+export CROSS_COMPILE=/home/v-user/android/aarch64-linux-android-4.9/bin/aarch64-linux-android-
+echo .     1 minimum GNU C                  3.2            
+echo gcc --version
+gcc --version
+echo .
+echo .     2 minimum GNU make               3.80            
+echo make --version
+make --version
+echo .
+echo .     3  minimum binutils               2.12       
+echo ld -v
+ld -v
+echo .
+echo . 4 util-linux             2.10o    
+echo fdformat --version
+fdformat --version
+echo .
+echo . 5 module-init-tools      0.9.10
+echo depmod -V
+depmod -V
+echo .
+echo . 6 e2fsprogs              1.41.4
+echo e2fsck -V
+e2fsck -V
+echo .
+echo . 7 jfsutils               1.1.3
+echo fsck.jfs -V
+fsck.jfs -V
+echo .
+echo . 8 reiserfsprogs          3.6.3  
+echo reiserfsck -V
+reiserfsck -V
+echo .
+echo . 9 xfsprogs               2.6.0
+echo xfs_db -V
+xfs_db -V
+echo .
+echo . 10 squashfs-tools         4.0
+echo mksquashfs -version
+mksquashfs -version
+echo .
+echo . 11 btrfs-progs            0.18 
+echo btrfsck
+btrfsck
+echo .
+echo . 12 pcmciautils            004
+echo pccardctl -V
+pccardctl -V
+echo .
+echo . 13 quota-tools            3.09
+echo quota -V
+quota -V
+echo .
+echo . 14 PPP                    2.4.0
+echo pppd --version
+pppd --version
+echo .
+echo . 15 isdn4k-utils           3.1pre1
+echo isdnctrl 2>&1|grep version
+isdnctrl 2>&1|grep version
+echo .
+echo . 16 nfs-utils              1.0.5
+echo showmount --version
+showmount --version
+echo .
+echo . 17 procps                 3.2.0
+echo ps --version
+ps --version
+echo .
+echo . 18 oprofile               0.9
+echo oprofiled --version
+oprofiled --version
+echo .
+echo . 19 udev                   081
+echo udevd --version
+udevd --version
+echo .
+echo . 20 grub                   0.93  
+echo grub --version || grub-install --version
+grub --version || grub-install --version
+echo .
+echo . 21 mcelog                 0.6
+echo mcelog --version
+mcelog --version
+echo .
+echo . 22 iptables               1.4.2
+echo iptables -V
+iptables -V
+echo .
+echo . 23 openssl \& libcrypto    1.0.0
+echo openssl version
+openssl version
+echo .
+echo . 24 bc                     1.06.95
+echo bc --version
+bc --version
+echo .
+echo . 25 Sphinx\ [#f1]_	       1.2		
+echo sphinx-build --version
+sphinx-build --version
+echo .
+echo "press enter to Return To Menu"
+read \n
+
