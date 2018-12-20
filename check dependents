@@ -1,8 +1,5 @@
 #!/bin/bash
 
-cd /home/v-user/android/Blu_vivo-xl4/VivoXL4-kernel-4.9
-export ARCH=arm64
-export CROSS_COMPILE=/home/v-user/android/aarch64-linux-android-4.9/bin/aarch64-linux-android-
 echo .     1 minimum GNU C                  3.2            
 echo gcc --version
 gcc --version
