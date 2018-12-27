@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo TOOLCHAIN used is gcc-linaro-6.3.1-2017.02-i686_aarch64-linux-gnu
-if [ ../gcc-linaro-6.3.1-2017.02-i686_aarch64-linux-gnu/bin ]
+if [ -e ../gcc-linaro-6.3.1-2017.02-i686_aarch64-linux-gnu/bin ]
 then
 	echo "already exists"
 else
