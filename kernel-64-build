@@ -16,6 +16,7 @@ make mrproper O=../output-64
 make clean O=../output-64
 export ARCH=arm64
 export CROSS_COMPILE=../gcc-linaro-6.3.1-2017.02-i686_aarch64-linux-gnu/bin/aarch64-linux-gnu-
-ARCH=arm64 make O=../output-64 k62v1_64_bsp_defconfig
+#ARCH=arm64 make O=../output-64 k62v1_64_bsp_defconfig
+ARCH=arm64 make O=../output-64 vivo_defconfig
 ARCH=arm64 make -j2 O=../output-64 2> ../error-64-linaro-6.3.1
 
